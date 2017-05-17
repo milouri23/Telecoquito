@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/newspaper"
+            android:title="Noticias" />
+        <item
+            android:id="@+id/nav_glosario"
+            android:icon="@drawable/format_float_left"
+            android:title="Glosario" />
+        <item
+            android:id="@+id/nav_conceptos"
+            android:icon="@drawable/book_open_page_variant"
+            android:title="Conceptos" />
+    </group>
+
+    <!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item> -->
+
+</menu>
