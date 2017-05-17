@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
-    -
+    android:layout_gravity="bottom">
 
     <!--<LinearLayout
         android:layout_width="match_parent"
@@ -36,12 +35,10 @@
             android:src="@drawable/usuario" />
         />
     </LinearLayout>-->
-    -
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.02">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -49,7 +46,8 @@
             android:layout_height="88dp"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="64dp"
+
             android:src="@drawable/cabecera" />
 
         <TextView
@@ -65,14 +63,12 @@
             android:textColor="#fff"
             android:textSize="15dp" />
     </RelativeLayout>
-    -
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:orientation="horizontal">
-        -
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -114,7 +110,6 @@
                 android:textColor="#fff"
                 android:textSize="15dp" />
         </LinearLayout>
-        -
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -161,7 +156,6 @@
                 android:textSize="15dp" />
         </LinearLayout>
     </LinearLayout>
-    -
 
     <LinearLayout
         android:layout_width="match_parent"
