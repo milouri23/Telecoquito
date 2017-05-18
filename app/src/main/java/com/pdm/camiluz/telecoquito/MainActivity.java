@@ -18,7 +18,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ImageButton ivGlosario;
+    ImageButton ivGlosario, ivNoticias, ivConceptos, ivCursos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +37,38 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         ivGlosario = (ImageButton) findViewById(R.id.ivGlosario);
+        ivNoticias = (ImageButton) findViewById(R.id.ivNoticias);
+        ivConceptos = (ImageButton) findViewById(R.id.ivConceptos);
+        ivCursos = (ImageButton) findViewById(R.id.ivCursos);
 
         ivGlosario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GlosarioActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ivNoticias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NoticiasActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ivConceptos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ConceptosActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ivCursos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CursosActivity.class);
                 startActivity(intent);
             }
         });
@@ -88,13 +115,17 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_noticias) {
-
+            Intent intent = new Intent(MainActivity.this, NoticiasActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_cursos) {
-
+            Intent intent = new Intent(MainActivity.this, CursosActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_glosario) {
-
+            Intent intent = new Intent(MainActivity.this, GlosarioActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_conceptos) {
-
+            Intent intent = new Intent(MainActivity.this, ConceptosActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
